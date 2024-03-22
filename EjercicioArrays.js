@@ -65,4 +65,4 @@ console.log(clasificaciones)
 
 
 /* e)muestra la clasificación actualizada (mostrarClasificacion())y comprueba que se ha hecho correctamente  */
-mostrarClasificacion()gi
+mostrarClasificacion()
