@@ -2,22 +2,22 @@
 // reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = "null";
+const nuevaString = "Hola";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = null;
+const nuevoNum = 8;
 
 // Crea una variable booleana:
-const nuevoBool = null;
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - null === 5;
+const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = null * 4 === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === null;
+const nuevoModulo = 21 % 5 === 1.05;
 
 
 
@@ -36,20 +36,24 @@ console.log(suma(10,10));
 function resta(x, y) {
   // Resta "x" de "y" y devuelve el valor
   // Tu código:
-
+  return y-x
 }
+console.log(resta(3,5))
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-
+  return y*x
 }
+console.log(multiplica(3,5))
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-
+return x/y
 }
+console.log(divide(9,3))
+
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
