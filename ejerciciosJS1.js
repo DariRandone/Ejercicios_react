@@ -245,40 +245,52 @@ function agregarSimboloExclamacion(str) {
 
 console.log(agregarSimboloExclamacion("Hello World"))
 
-/*
+
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Bruce Wayne" -> "Bruce Wayne"
   // Tu código:
-
+  let nombreyapellido=nombre + " " + apellido
+return nombreyapellido
 }
+console.log(combinarNombres("Dario","Randone"))
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
+  let saludo="Hola " + nombre
+  return saludo
 
 }
+console.log(obtenerSaludo("Martín"))
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un cuadrado teniendo su altura y ancho
   // Tu código:
-
+  let area=alto * ancho
+return area
 }
-
+console.log(obtenerAreaRectangulo(2,2))
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
+  let perimetro=lado * 4
+  return perimetro
 
 }
+console.log(retornarPerimetro(2))
+
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-
+let area=base * altura
+return area
 
 }
-
+console.log(areaDelTriangulo(4,5))
+/*
 function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. 
   //Escribe un programa que pida al usuario un número de euros y calcule el cambio en dólares.
