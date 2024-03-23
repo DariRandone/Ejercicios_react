@@ -17,8 +17,8 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 1.05;
-
+const nuevoModulo = 21 % 5 === 1;
+console.log(21%5)
 
 
 function devolverString(str) {
@@ -59,71 +59,129 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:utilizar if y else
-
-
+  let resultado;
+  if (x == y) {
+    resultado = true;
+  } else {
+    resultado = false;
+  }
+  return resultado;
 }
+console.log(sonIguales(5,5))
+
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  let resultado;
+  if (str1.length == str2.length) {
+    resultado = true;
+  } else {
+    resultado = false;
+  }
+  return resultado;
 }
+console.log(tienenMismaLongitud("ss","55"))
+
+
+
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  let resultado;
+  if (num < 90 ) {
+    resultado = true;
+  } else {
+    resultado = false;
+  }
+  return resultado;
 }
+console.log(menosQueNoventa(89))
+
+
 
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  let resultado;
+  if (num > 50 ) {
+    resultado = true;
+  } else {
+    resultado = false;
+  }
+  return resultado;
 }
+console.log(mayorQueCincuenta(40))
+
+
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-
+return x%y
 }
-
+console.log(obtenerResto(25,7))
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
+  let resultado;
+  if (num % 2==0 ) {
+    resultado = true;
+  } else {
+    resultado = false;
+  }
+  return resultado;
+}
+console.log(esPar(45))
 
   
-}
+
+
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-
+ let resultado;
+  if (num % 2==!0 ) {
+    resultado = true;
+  } else {
+    resultado = false;
+  }
+  return resultado;
 }
+console.log(esImpar(42134))
+
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-
+  return (num ** 2);
 }
+console.log(elevarAlCuadrado(5))
+
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-
+   return (Math.pow(num,3) );
 }
+console.log(elevarAlCubo(5))
+
+
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
 
 }
-
+/*
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
@@ -207,3 +265,4 @@ function esVocal(letra){
 
 
 }
+*/
