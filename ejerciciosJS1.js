@@ -179,13 +179,21 @@ console.log(elevarAlCubo(5))
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-
+  
+  return (Math.pow(num,exponent) );
 }
-/*
+console.log(elevar(5,3))
+
+
+
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
 
+return(Math.round(num))
+}
+console.log(redondearNumero(20.8))
+/*
 }
 
 function redondearHaciaArriba(num) {
