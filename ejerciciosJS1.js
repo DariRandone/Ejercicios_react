@@ -193,36 +193,59 @@ function redondearNumero(num) {
 return(Math.round(num))
 }
 console.log(redondearNumero(20.8))
-/*
-}
+
+
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-
+  return(Math.ceil(num))
 }
+console.log(redondearHaciaArriba(8.3))
+
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
+  
+    return Math.random() 
+  }
+  
+  
+console.log(numeroRandom())
 
-}
 
-function esPositivo(numero) {
+function esPositivo(num) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-
+  let resultado;
+  if (num > 0 ) {
+    resultado = "Es positivo";
+  } else {
+    if (num < 0 ) {
+      resultado = "Es negativo";
+    } else{
+      resultado = false;
+  }}
+  return resultado;
 }
+console.log(esPositivo(0))
+
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-
+   str = str + "!"
+  return str 
 }
 
+
+console.log(agregarSimboloExclamacion("Hello World"))
+
+/*
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Bruce Wayne" -> "Bruce Wayne"
