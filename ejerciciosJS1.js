@@ -295,11 +295,12 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. 
   //Escribe un programa que pida al usuario un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-let euros=prompt(" Introduzca la catidad de Euros a convertir","")
-let dolares = euros / 1.2
-return "Son ",dolares," dólares"
+let dolares = (parseFloat(euro) / 1.2)
+return (dolares)
 }
-console.log("Son ", deEuroAdolar , "dólares")
+console.log(deEuroAdolar(50))
+
+
 /*
 
 function esVocal(letra){
