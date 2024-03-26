@@ -270,11 +270,14 @@ function esPositivo(num) {
   return resultado;
 }
 console.log(esPositivo(0))
+*/
+const esPositivo=num=>num<0 ? "Es negativo": num > 0 ? "Es positivo":false
+console.log(esPositivo(-4)); 
 
 
 
 
-
+/*
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
@@ -285,9 +288,17 @@ function agregarSimboloExclamacion(str) {
 
 
 console.log(agregarSimboloExclamacion("Hello World"))
+*/
+const agregarSimboloExclamacion=str => str + "!"
+
+console.log(agregarSimboloExclamacion("Hello world"))
 
 
-function combinarNombres(nombre, apellido) {
+  
+const combinarNombres=(nombre, apellido)=>nombre + " " + apellido
+console.log(combinarNombres("dario","randone"))
+  
+  /*
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Bruce Wayne" -> "Bruce Wayne"
   // Tu código:
@@ -295,8 +306,13 @@ function combinarNombres(nombre, apellido) {
 return nombreyapellido
 }
 console.log(combinarNombres("Dario","Randone"))
-
-function obtenerSaludo(nombre) {
+*/
+const obtenerSaludo=(nombre2)=> "Hola "+ nombre2 + "!"
+console.log(obtenerSaludo("dario"))  
+  /*
+  
+  
+  
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
@@ -306,14 +322,26 @@ function obtenerSaludo(nombre) {
 }
 console.log(obtenerSaludo("Martín"))
 
-function obtenerAreaRectangulo(alto, ancho) {
+*/
+
+
+const obtenerAreaRectangulo=(alto, ancho)=> alto * ancho
+console.log(obtenerAreaRectangulo(20,10)) 
+ 
+ /*
+ 
   // Retornar el area de un cuadrado teniendo su altura y ancho
   // Tu código:
   let area=alto * ancho
 return area
 }
 console.log(obtenerAreaRectangulo(2,2))
-function retornarPerimetro(lado){
+*/
+const retornarPerimetro=(lado)=> lado *4
+console.log(retornarPerimetro(5))
+
+/*
+
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
   let perimetro=lado * 4
@@ -321,9 +349,14 @@ function retornarPerimetro(lado){
 
 }
 console.log(retornarPerimetro(2))
+*/
+
+const areaDelTriangulo=(base, altura)=> base * altura
+console.log(obtenerAreaRectangulo(5,4))
+/*
 
 
-function areaDelTriangulo(base, altura){
+
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
 let area=base * altura
@@ -332,7 +365,12 @@ return area
 }
 console.log(areaDelTriangulo(4,5))
 
-function deEuroAdolar(euro){
+*/
+const deEuroAdolar=(euro)=> parseFloat(euro)/1.2
+console.log(deEuroAdolar(20))
+
+/*
+
   //Supongamos que 1 euro equivale a 1.20 dólares. 
   //Escribe un programa que pida al usuario un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
