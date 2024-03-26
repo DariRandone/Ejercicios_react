@@ -380,15 +380,25 @@ return (dolares)
 console.log(deEuroAdolar(50))
 
 
-/*
+*/
 
-function esVocal(letra){
+
+const esVocal=(letra)=> letra === "a" ? "Es vocal": letra ==="e"? "Es vocal": letra ==="i"? "Es vocal": letra ==="o"? "Es vocal": letra ==="u"? "Es vocal":"dato incorrecto"
+console.log(esVocal("u"))
+
+  /*
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
     //si ingresa una consonante muestre en pantalla dato incorrecto
   //Escribe tu código aquí
 
-
+function esVocal(letra) {
+    if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
+    console.log('Es vocal')
+   } else if (letra.length !== 1) {
+   console.log('Dato incorrecto')
+   }
+}
 }
 */
