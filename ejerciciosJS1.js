@@ -21,24 +21,33 @@ const nuevoModulo = 21 % 5 === 1;
 console.log(21%5)
 
 
-function devolverString(str) {
+/*function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
 return(str)
 }
 console.log(devolverString("Cadena de texto")); 
+*/
+let  devolverString= str= str => str
+console.log(devolverString("Cadena de texto")); 
+
+
 
 
 let suma = (x, y) => x+y
 console.log(suma(10,10));
 
-
+/*
 function resta(x, y) {
   // Resta "x" de "y" y devuelve el valor
   // Tu código:
   return y-x
-}
+
 console.log(resta(3,5))
+*/
+let resta = (x, y) => x - y ;console.log (resta (10,5));
+
+/*
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
@@ -53,14 +62,17 @@ function divide(x, y) {
 return x/y
 }
 console.log(divide(9,3))
+let divide=(x)
+*/
 
 
+/*const para funciones flecha*/
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:utilizar if y else
   let resultado;
-  if (x == y) {
+  if (x === y) {
     resultado = true;
   } else {
     resultado = false;
@@ -68,7 +80,8 @@ function sonIguales(x, y) {
   return resultado;
 }
 console.log(sonIguales(5,5))
-
+const sonIguales2 = (x,y) => x=== y ;console.log(sonIguales2(10,11)); 
+ 
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
@@ -84,6 +97,11 @@ function tienenMismaLongitud(str1, str2) {
 }
 console.log(tienenMismaLongitud("ss","55"))
 
+
+const tienenMismaLongitud2 =(str1,str2)=>{
+return str1.length === str2.length
+}
+console.log(tienenMismaLongitud2("12334","doce"))
 
 
 
@@ -125,11 +143,13 @@ function obtenerResto(x, y) {
 return x%y
 }
 console.log(obtenerResto(25,7))
-function esPar(num) {
+
+const esPar = num => num % 2===0; console.log(esPar(5)); 
+
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  let resultado;
+  /* let resultado;
   if (num % 2==0 ) {
     resultado = true;
   } else {
@@ -138,10 +158,11 @@ function esPar(num) {
   return resultado;
 }
 console.log(esPar(45))
-
+*/
   
 
-
+const esImpar = num => num % 2===0; console.log(esImpar(5)); 
+/*
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
@@ -165,7 +186,11 @@ function elevarAlCuadrado(num) {
   return (num ** 2);
 }
 console.log(elevarAlCuadrado(5))
+*/
+const elevarAlCuadrado= num=> num *num;console.log (elevarAlCuadrado(4))
+const elevarAlCuadradoMath= num=> Math.pow(num,2);console.log (elevarAlCuadradoMath(4))
 
+/*
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
@@ -173,8 +198,10 @@ function elevarAlCubo(num) {
    return (Math.pow(num,3) );
 }
 console.log(elevarAlCubo(5))
+*/
+const elevarAlCuboMath= num=> Math.pow(num,3);console.log (elevarAlCuboMath(4))
 
-
+/*
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
@@ -183,9 +210,9 @@ function elevar(num, exponent) {
   return (Math.pow(num,exponent) );
 }
 console.log(elevar(5,3))
-
-
-
+*/
+const elevarMath= num=> Math.pow(num,4);console.log (elevarMath(4))
+/*
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
@@ -194,7 +221,10 @@ return(Math.round(num))
 }
 console.log(redondearNumero(20.8))
 
+*/
+const redondearNumero = num=> Math.round(num);console.log (Math.round(4.3))
 
+/*
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
@@ -202,6 +232,10 @@ function redondearHaciaArriba(num) {
   return(Math.ceil(num))
 }
 console.log(redondearHaciaArriba(8.3))
+*/
+const redondearHaciaArriba = num=> Math.ceil(num);console.log (Math.ceil(4.9))
+
+/*
 
 
 function numeroRandom() {
@@ -214,6 +248,10 @@ function numeroRandom() {
   
 console.log(numeroRandom())
 
+*/
+const numeroRandom = num=> Math.random();console.log (Math.random())
+
+/*
 
 function esPositivo(num) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
@@ -232,6 +270,9 @@ function esPositivo(num) {
   return resultado;
 }
 console.log(esPositivo(0))
+
+
+
 
 
 function agregarSimboloExclamacion(str) {
