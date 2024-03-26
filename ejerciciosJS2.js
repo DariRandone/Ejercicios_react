@@ -1,22 +1,33 @@
 
 
-function obtenerMayor(x, y) {
-  // "x" e "y" son números enteros .
+const obtenerMayor=(x, y) => parseInt(x) > parseInt(y) ?  x : parseInt(x)<parseInt(y) ? y : x 
+
+console.log(obtenerMayor(0,2))
+
+
+// "x" e "y" son números enteros .
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
 /* Metodos de MAth */
 
-}
 
-function mayoriaDeEdad(edad) {
+
+const mayoriaDeEdad=(edad)=> parseInt(edad)>= 18 ? "Allowed":"Not Allowed"
+console.log(mayoriaDeEdad(19))
+  
+/*  
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
 
 }
+  */
+const conection=(status)=> status===1 ? "Online": status===2 ? "Away":"Offline"
+console.log(conection())  
+  /*
   
-function conection(status) {
+  
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
   //Cuando el estado es igual a 1, el usuario está "Online"
   //Cuando el estado es igual a 2, el usuario está "Away"
@@ -24,18 +35,25 @@ function conection(status) {
   //Devolver el estado de conexión de usuario en cada uno de los casos.
 
 }
+*/
+const saludo=(idioma)=> idioma ==="aleman" ? "Guten Tag!": idioma==="mandarin" ? "Ni Hao!": idioma==="ingles" ? "Hello!": "Hola!"
+console.log(saludo("aleman"))
 
-function saludo(idioma) {
+
+  /*
+  
+  
   // Devuelve un saludo en tres diferentes lenguajes:
   // Si "idioma" es "aleman", devuelve "Guten Tag!"
   // Si "idioma" es "mandarin", devuelve "Ni Hao!"
   // Si "idioma" es "ingles", devuelve "Hello!"
-  // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
+  // Si "idioma" no es ninguno de los anteiores o es //` devuelve "Hola!"//
   // Tu código:
+*/
 
-}
 
-function colors(color) {
+const  colors=(color)=> color=== "blue" ? "This is blue" : color === "red" ? "This is red": color=== "green" ? "This is green": color=== "orange" ? "This is orange":"Color not found"
+console.log(colors("green"))
   //La función recibe un color. Devolver el string correspondiente:
   //En caso que el color recibido sea "blue", devuelve --> "This is blue"
   //En caso que el color recibido sea "red", devuelve --> "This is red"
@@ -45,8 +63,8 @@ function colors(color) {
   //Usar el statement Switch.
 
 
-}
 
+/*
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
@@ -126,4 +144,4 @@ function doWhile(numero) {
   //Usar el bucle do ... while.
 
 }
-
+*/
