@@ -64,23 +64,27 @@ console.log(colors("green"))
 
 
 
-/*
-function esDiezOCinco(numero) {
-  // Devuelve "true" si "numero" es 10 o 5
+
+const esDiezOCinco=(numero)=> (numero ==10 || numero ==5 )? true:false
+console.log(esDiezOCinco(10))
+ /* // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
 
 }
-
-function estaEnRango(numero) {
-  // Devuelve "true" si "numero" es menor que 50 y mayor que 20
+*/
+ const estaEnRango = (numero) => numero > 20 && numero<50 ? true:false
+ console.log(estaEnRango(49)) 
+ 
+ // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
 
-}
 
-function esEntero(numero) {
-  // Devuelve "true" si "numero" es un entero (int/integer)
+
+const esEntero = (numero)=> Math.floor(numero)- (numero)==0 ? true:false 
+console.log(esEntero(9.0009))
+ // Devuelve "true" si "numero" es un entero (int/integer)
   // Ejemplo: 0.8 -> false
   // Ejemplo: 1 -> true
   // Ejemplo: -10 -> true
@@ -88,10 +92,11 @@ function esEntero(numero) {
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
 
-}
 
-function fizzBuzz(numero) {
-  // Si "numero" es divisible entre 3, devuelve "fizz"
+
+const fizzBuzz=(numero)=>numero % 15==0 ? "fizzbuzz": numero % 3==0 ? "fizz":numero % 5==0 ? "buzz":numero
+console.log(fizzBuzz(165))
+  /* // Si "numero" es divisible entre 3, devuelve "fizz"
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
