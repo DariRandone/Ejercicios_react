@@ -2,7 +2,8 @@
 
 const obtenerMayor=(x, y) => parseInt(x) > parseInt(y) ?  x : parseInt(x)<parseInt(y) ? y : x 
 
-console.log(obtenerMayor(0,2))
+document.writeln(obtenerMayor(0,2))
+document.writeln(obtenerMayor(0,2))
 
 
 // "x" e "y" son números enteros .
@@ -14,7 +15,7 @@ console.log(obtenerMayor(0,2))
 
 
 const mayoriaDeEdad=(edad)=> parseInt(edad)>= 18 ? "Allowed":"Not Allowed"
-console.log(mayoriaDeEdad(19))
+document.writeln(mayoriaDeEdad(19))
   
 /*  
   //Determinar si la persona según su edad puede ingresar a un evento.
@@ -24,7 +25,7 @@ console.log(mayoriaDeEdad(19))
 }
   */
 const conection=(status)=> status===1 ? "Online": status===2 ? "Away":"Offline"
-console.log(conection())  
+document.writeln(conection(2))  
   /*
   
   
@@ -37,7 +38,7 @@ console.log(conection())
 }
 */
 const saludo=(idioma)=> idioma ==="aleman" ? "Guten Tag!": idioma==="mandarin" ? "Ni Hao!": idioma==="ingles" ? "Hello!": "Hola!"
-console.log(saludo("aleman"))
+document.writeln(saludo("aleman"))
 
 
   /*
@@ -53,7 +54,8 @@ console.log(saludo("aleman"))
 
 
 const  colors=(color)=> color=== "blue" ? "This is blue" : color === "red" ? "This is red": color=== "green" ? "This is green": color=== "orange" ? "This is orange":"Color not found"
-console.log(colors("green"))
+document.writeln(colors("green")/n)
+
   //La función recibe un color. Devolver el string correspondiente:
   //En caso que el color recibido sea "blue", devuelve --> "This is blue"
   //En caso que el color recibido sea "red", devuelve --> "This is red"
@@ -66,7 +68,7 @@ console.log(colors("green"))
 
 
 const esDiezOCinco=(numero)=> (numero ==10 || numero ==5 )? true:false
-console.log(esDiezOCinco(10))
+document.writeln(esDiezOCinco(10))
  /* // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -74,7 +76,7 @@ console.log(esDiezOCinco(10))
 }
 */
  const estaEnRango = (numero) => numero > 20 && numero<50 ? true:false
- console.log(estaEnRango(49)) 
+ document.writeln(estaEnRango(49)) 
  
  // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
@@ -83,7 +85,7 @@ console.log(esDiezOCinco(10))
 
 
 const esEntero = (numero)=> Math.floor(numero)- (numero)==0 ? true:false 
-console.log(esEntero(9.0009))
+document.writeln(esEntero(9.0009))
  // Devuelve "true" si "numero" es un entero (int/integer)
   // Ejemplo: 0.8 -> false
   // Ejemplo: 1 -> true
@@ -95,7 +97,7 @@ console.log(esEntero(9.0009))
 
 
 const fizzBuzz=(numero)=>numero % 15==0 ? "fizzbuzz": numero % 3==0 ? "fizz":numero % 5==0 ? "buzz":numero
-console.log(fizzBuzz(165))
+document.writeln(fizzBuzz(165))
   /* // Si "numero" es divisible entre 3, devuelve "fizz"
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
