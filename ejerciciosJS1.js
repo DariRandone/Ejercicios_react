@@ -293,10 +293,14 @@ const agregarSimboloExclamacion=str => str + "!"
 
 console.log(agregarSimboloExclamacion("Hello world"))
 
-
+const agregarSimboloExclamacion2= str => `${str} Codo !` ; console.log(agregarSimboloExclamacion2("Hola Codo a"));
   
 const combinarNombres=(nombre, apellido)=>nombre + " " + apellido
-console.log(combinarNombres("dario","randone"))
+
+const combinarNombres2=(nombre, apellido)=>` Hola Soy  ${nombre} ${apellido}`
+
+
+console.log(combinarNombres2("dario","randone"))
   
   /*
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
@@ -307,8 +311,12 @@ return nombreyapellido
 }
 console.log(combinarNombres("Dario","Randone"))
 */
-const obtenerSaludo=(nombre2)=> "Hola "+ nombre2 + "!"
-console.log(obtenerSaludo("dario"))  
+const obtenerSaludo=(nombre2)=>Hola + nombre2 + "!"
+const obtenerSaludo2=(nombre3)=>` Hola ${nombre3}  ! `
+
+
+
+console.log(obtenerSaludo2("dario"))  
   /*
   
   
@@ -351,7 +359,7 @@ console.log(retornarPerimetro(5))
 console.log(retornarPerimetro(2))
 */
 
-const areaDelTriangulo=(base, altura)=> base * altura
+const areaDelTriangulo=(base, altura)=> base * altura/2
 console.log(obtenerAreaRectangulo(5,4))
 /*
 
@@ -367,7 +375,9 @@ console.log(areaDelTriangulo(4,5))
 
 */
 const deEuroAdolar=(euro)=> parseFloat(euro)/1.2
-console.log(deEuroAdolar(20))
+const deEuroAdolar2=(euro)=> ` Tenés ${euro} euros; el cambio a dolar es: ${euro * 1.2}`
+
+console.log(deEuroAdolar2(20))
 
 /*
 
@@ -385,6 +395,21 @@ console.log(deEuroAdolar(50))
 
 const esVocal=(letra)=> letra === "a" ? "Es vocal": letra ==="e"? "Es vocal": letra ==="i"? "Es vocal": letra ==="o"? "Es vocal": letra ==="u"? "Es vocal":"dato incorrecto"
 console.log(esVocal("u"))
+
+
+const esVocalMatrix = (letra2)=>{
+let vocales= ["a","e","i","o","u"]
+if (letra2.length===1){
+  for (i=0;i< vocales.length-1;i++){
+    if(letra2.== vocales[i])
+
+  }
+
+}
+
+
+}
+
 
   /*
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
