@@ -390,40 +390,39 @@ return (dolares)
 console.log(deEuroAdolar(50))
 
 
-*/
+
 
 
 const esVocal=(letra)=> letra === "a" ? "Es vocal": letra ==="e"? "Es vocal": letra ==="i"? "Es vocal": letra ==="o"? "Es vocal": letra ==="u"? "Es vocal":"dato incorrecto"
 console.log(esVocal("u"))
 
-
+*/
 const esVocalMatrix = (letra2)=>{
 let vocales= ["a","e","i","o","u"]
 if (letra2.length===1){
   for (i=0;i< vocales.length-1;i++){
-    if(letra2.== vocales[i])
-
+    if(letra2.toLowerCase()=== vocales[i]) 
+    return "es vocal";
   }
 
+
+  return `dato incorrecto, ingresaste una consonante  y es la ${letra2}`
 }
 
+  return `dato incorrecto, ingresaste mas de una letra y es  ${letra2}`
+};
+console.log(esVocalMatrix("3"))
 
-}
-
-
-  /*
+ 
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
     //si ingresa una consonante muestre en pantalla dato incorrecto
   //Escribe tu código aquí
 
-function esVocal(letra) {
-    if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
-    console.log('Es vocal')
-   } else if (letra.length !== 1) {
-   console.log('Dato incorrecto')
-   }
-}
-}
-*/
+//function esVocal(letra) {
+  //  if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
+  //  console.log('Es vocal')
+  // } else if (letra.length !== 1) {
+  // console.log('Dato incorrecto')
+   
