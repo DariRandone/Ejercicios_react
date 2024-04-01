@@ -96,16 +96,28 @@ console.log(esEntero(9.0009))
 
 const fizzBuzz=(numero)=>numero % 15==0 ? "fizzbuzz": numero % 3==0 ? "fizz":numero % 5==0 ? "buzz":numero
 console.log(fizzBuzz(165))
-  /* // Si "numero" es divisible entre 3, devuelve "fizz"
+  // Si "numero" es divisible entre 3, devuelve "fizz"
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
 
-}
+
 
 
 function operadoresLogicos(num1, num2, num3) {
-  //La función recibe tres números distintos. 
+if (num1>num2 && num1>num3 && num1>0)  respuesta ="Número 1 es mayor y positivo"; else
+if (num1<0 || num2 <0 || num3<0) respuesta="Hay negativos"; else 
+if (num3>num1 && num3>num2) respuesta=`El tercer numero pasa a ser ${num3+1} `;else
+if (num1===0 || num2===0 || num3===0)respuesta="Error";else 
+respuesta=false
+
+ return respuesta
+} 
+console.log (operadoresLogicos(10,90,6))
+  /*
+ 
+ 
+ //La función recibe tres números distintos. 
   //Si num1 es mayor a num2 y a num3 y además es positivo, retornar ---> "Número 1 es mayor y positivo"
   //Si alguno de los tres números es negativo, retornar ---> "Hay negativos"
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
