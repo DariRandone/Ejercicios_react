@@ -114,7 +114,7 @@ respuesta=false
  return respuesta
 } 
 console.log (operadoresLogicos(10,90,6))
-  /*
+ 
  
  
  //La función recibe tres números distintos. 
@@ -124,9 +124,32 @@ console.log (operadoresLogicos(10,90,6))
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
 
-}
 
-function esPrimo(numero) {
+
+function esPrimo(numero9) {
+
+for (let i=2;i<=numero9;i++){
+  
+ 
+  if(numero9%i === 0) return false ;break; 
+    
+}
+return true
+
+  } 
+
+
+console.log(esPrimo(9))
+
+
+
+  /* 
+
+  var i 
+for (i=0;i<=10;i++) { 
+   	document.write(i)
+   	document.write("<br>") 
+}
   // Devuelve "true" si "numero" es primo
   // De lo contrario devuelve "falso"
   // Pista: un número primo solo es divisible por sí mismo y por 1
