@@ -126,24 +126,18 @@ console.log (operadoresLogicos(10,90,6))
 
 
 
-function esPrimo(numero9) {
 
-for (let i=2;i<=numero9;i++){
-  
- 
-  if(numero9%i === 0) return false ;break; 
-    
+
+function esPrimo(numero8) {
+  for (let i = 2; i < numero8; i++) {
+    if (numero8 % i === 0) {
+      return false;
+    }
+  }
+  return numero8 !== 1;
 }
-return true
-
-  } 
-
-
 console.log(esPrimo(9))
-
-
-
-  /* 
+ /* 
 
   var i 
 for (i=0;i<=10;i++) { 
@@ -157,20 +151,35 @@ for (i=0;i<=10;i++) {
   // Nota: Los números 0 y 1 NO son considerados números primos
 
 }
-
-function esVerdadero(valor){
+*/
+//function esVerdadero(valor)
+const esVerdadero=(valor) => valor==true?"Soy verdadero":"Soy falso";
+console.log(esVerdadero(true))
+  
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
 
-}
 
-function tablaDelSeis(){
-  //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
+
+//function tablaDelSeis()
+tablaDelSeis=arraysalida => {
+  let valorTemp={}
+  for (let i =0; i <= 10; i++) {
+     valorTemp[i]=(6 * i);
+     console.log(valorTemp[i])
+} 
+return valorTemp;
+} 
+tablaDelSeis()
+
+/*
+ 
+ //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
 
-}
+
 
 function tieneTresDigitos(numero){
   //Leer un número entero y determinar si tiene 3 dígitos.
