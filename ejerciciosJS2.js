@@ -180,7 +180,13 @@ const tablaDelSeis=()=> {
 return valorTemp
 }
 console.log(tablaDelSeis())
-/*
+
+const tablaDelSeisfl = array => Array.from({ length: 11 }, (_, i) => 6 * i);
+
+console.log(tablaDelSeisfl())
+
+/* 
+ 
  
  //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
