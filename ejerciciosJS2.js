@@ -186,14 +186,18 @@ console.log(tablaDelSeis())
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
 
-
+*/
 
 function tieneTresDigitos(numero){
+  if (numero/10 > 10 && numero/10 < 100 ){ respu2="True"   }
+  else {respu2="False" } 
   //Leer un número entero y determinar si tiene 3 dígitos.
   //Escribe tu código aquí
-
+return respu2
 }
 
+console.log (tieneTresDigitos(999))
+/*
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
