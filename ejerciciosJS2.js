@@ -163,15 +163,15 @@ console.log(esVerdadero(true))
 
 
 //function tablaDelSeis()
-tablaDelSeis=arraysalida => {
-  let valorTemp={}
-  for (let i =0; i <= 10; i++) {
-     valorTemp[i]=(6 * i);
-     console.log(valorTemp[i])
-} 
-return valorTemp;
-} 
-tablaDelSeis()
+function tablaDelSeis() {
+  let valorTemp=[]
+  for (i =0; i <= 10; i++) {
+     valorTemp.push([6 * i])
+  }
+return valorTemp
+}
+console.log(tablaDelSeis())
+
 
 /*
  
