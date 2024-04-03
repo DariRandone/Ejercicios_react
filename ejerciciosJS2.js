@@ -163,7 +163,7 @@ console.log(esVerdadero(true))
 
 
 //function tablaDelSeis()
-function tablaDelSeis() {
+/*function tablaDelSeis() {
   let valorTemp=[]
   for (i =0; i <= 10; i++) {
      valorTemp.push([6 * i])
@@ -171,8 +171,15 @@ function tablaDelSeis() {
 return valorTemp
 }
 console.log(tablaDelSeis())
-
-
+*/
+const tablaDelSeis=()=> {
+  let valorTemp=[]
+  for (i =0; i <= 10; i++) {
+     valorTemp.push([6 * i])
+  }
+return valorTemp
+}
+console.log(tablaDelSeis())
 /*
  
  //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
