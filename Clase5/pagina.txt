@@ -1,2 +1,4 @@
 https://jsonplaceholder.typicode.com/posts/
 https://jsonplaceholder.typicode.com/users/
+git checkout -b copimain crea una nueva rama en local  y entra en ella
+git push -u origin copimain mandar rama a repo remoto
