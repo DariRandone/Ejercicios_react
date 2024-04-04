@@ -1,3 +1,4 @@
+git clone repo  carpeta destino (clona repo a carpeta destino local)  
 git checkout rama (Cambia a la rama local)
 git pull (Trae  todos los cambios de  remoto a local)
 git checkout -b copimain (crea una nueva rama en local  y entra en ella)
