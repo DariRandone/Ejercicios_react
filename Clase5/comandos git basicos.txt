@@ -1,0 +1,6 @@
+git checkout rama (Cambia a la rama local)
+git pull (Trae  todos los cambios de  remoto a local)
+git checkout -b copimain (crea una nueva rama en local  y entra en ella)
+git push -u origin copimain (mandar rama a repo remoto)
+git commit -a -m "Mensaje " (para confirmar cambios)
+git add . (Sube los archivos del local a la rama local)
