@@ -9,10 +9,16 @@
 body {
     font-family:'Gloria Hallelujah',cursive;
     color: #2b2b2b ;
-    display: grid;
+    display:inline-table;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
-    }
+    display:flexbox;
+    border-radius: 10px,34px;
+    border: 2cap;
+    box-sizing: inherit;
+
+   
+}
 header {
     display: flex;
     align-items: center;
@@ -37,3 +43,4 @@ footer {
     background-color: #263546;
     color:snow
 }
+   
